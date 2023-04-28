@@ -26,7 +26,7 @@ function Leagues() {
 							<img src={league.url} alt="" />
 							<NavLink to={`standing/${league.id}`}>{league.name}</NavLink>
 						</div>
-						{selectedLeagues.map((i) => i === league.id)[0] ? (
+						{selectedLeagues.includes(league.id) ? (
 							<RiArrowUpSLine
 								className={styles.icon}
 								onClick={() => handleOnClick(league.id)}
