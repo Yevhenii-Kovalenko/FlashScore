@@ -1,0 +1,76 @@
+.match {
+	padding: 15px 15px 15px 10px;
+	font-size: 15px;
+	background-color: #faededd0;
+	margin: 10px;
+	border-radius: 15px;
+	position: relative;
+	top: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border: 1px solid #1d1c1cd0;
+}
+.matchInfo {
+	display: flex;
+	width: 300px;
+	justify-content: space-between;
+	margin-left: 50px;
+	padding: 5px;
+}
+
+.favoriteStatusConteiner {
+	display: flex;
+	min-width: 120px;
+	align-items: center;
+}
+.status {
+	margin: 0px 15px;
+}
+.team {
+	margin-right: 20px;
+	width: 200px;
+	text-align: left;
+}
+.team:hover {
+	background-color: rgba(128, 128, 128, 0.295);
+	border-radius: 10px;
+}
+.team div {
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+.team div img {
+	width: 15px;
+	height: 15px;
+	margin-right: 5px;
+	margin-bottom: 3px;
+}
+.team p {
+	margin-bottom: 5px;
+}
+.team:hover{
+	cursor: pointer;
+}
+.score p {
+	margin-bottom: 5px;
+}
+.icon {
+	width: 30px;
+	height: 30px;
+	font-size: 30px;
+	color: gray;
+}
+.icon:hover {
+	border-radius: 50%;
+	background-color: rgba(128, 128, 128, 0.295);
+	cursor: pointer;
+}
+.showMore{
+	font-size: 12px;
+}
+.showMore:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}

@@ -1,0 +1,48 @@
+.leagues {
+	max-width: 850px;
+	margin: 70px auto;
+	background: #f3f3f3;
+   border-radius: 20px;
+   text-align: center;
+   color:black;
+   padding-bottom: 15px;
+   height: 100%;
+}
+.leaguesContainer {
+	border: 1px solid #585757;
+	padding: 20px;
+	background-color: #facf59;
+	border-radius: 35px;
+	margin-bottom: 10px;
+	margin: 10px 20px ;
+}
+.leaguesTitle {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.icon {
+	font-size: 25px;
+	padding: 5px;
+	transition: 1s all ease 0s;
+}
+.leaguesTitle:hover {
+	cursor: pointer;
+}
+.leagueBody {
+	display: flex;
+}
+.leagueBody a {
+	color: black;
+}
+.leagueBody a:hover{
+	text-decoration: underline;
+}
+.leagueBody img {
+	width: 30px;
+	height: 20px;
+	margin-right: 10px;
+}
+.leagueBody div {
+	font-size: 16px;
+}

@@ -1,0 +1,37 @@
+.tableImg {
+	width: 20px;
+	height: 20px;
+}
+.table{
+	margin: 20px 0px ;
+}
+table {
+	border-collapse: collapse;
+	width: 100%;
+	max-width: 700px;
+	margin: 0 auto;
+}
+th {
+	background-color: #001691;
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+	padding: 10px;
+}
+
+td {
+	border: 1px solid #000000;
+	text-align: center;
+	padding: 10px;
+   color: #000000;
+   
+}
+td:nth-child(2){
+	text-align: left;
+
+}
+
+.tableImg {
+	max-height: 30px;
+	margin-right: 5px;
+}

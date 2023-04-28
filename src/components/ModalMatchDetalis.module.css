@@ -1,0 +1,98 @@
+.modal {
+  position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 9999;
+	width: 200vh;
+	max-width: 100%;
+	margin: auto;
+	padding: 20px;
+	background: rgba(0, 0, 0, 0.8);
+	color: white;
+	backdrop-filter: blur(4px);
+	transition: opacity 0.3s ease-in-out;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+.modalContainer{
+  /* display: flex; */
+	/* justify-content: space-around; */
+	border: 1px solid white;
+	border-radius: 10px;
+	height: 80vh;
+	max-width: 100%;
+	position: relative;
+	top: 0;
+	left: 0;
+	color: white;
+	z-index: 99909;
+   margin: 0px 50px;
+}
+.modalTitle{
+  position: relative;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  top: -25px;
+  font-size: 28px;
+ 
+}
+.modalTitle h2{
+  position: absolute;
+
+}
+.modalClose{
+  font-size: 28px;
+  position: absolute;
+  right: 0;
+}
+.matchInfo{
+  display: flex;
+  flex-direction: column;
+
+}
+.teamInfo{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+.teamInfoBody{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.teamInfoBody div {
+  display: flex;
+  align-items: center;
+  
+}
+.teamInfoBody p {
+  font-size: 36px;
+}
+.teamInfoBody ul {
+  margin-top: 10px;
+
+}
+.teamInfoScore{
+  font-size: 20px;
+  margin-top: 10px;
+}
+.teamInfoScore li {
+  margin-left: 5px;
+}
+.matchScore{
+  display: flex;
+  align-items: center;
+  font-size: 40px;
+}
+.matchScore p {
+  font-size: 97px;
+  margin: 10px;
+}
+
+.status{
+  font-size: 19px;
+}

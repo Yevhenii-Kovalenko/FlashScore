@@ -1,0 +1,21 @@
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+	
+}
+
+body {
+	font-family: LivesportFinderLatin,Adjusted Arial Fallback,Arial,sans-serif,
+		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+		sans-serif;
+	color: white;
+	background-color: #c5c2c2;
+	letter-spacing: 0.5px;
+	overflow: visible;
+}
+
+a{
+	color: white;
+}

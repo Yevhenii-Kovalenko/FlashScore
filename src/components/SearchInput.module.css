@@ -1,0 +1,31 @@
+
+.inputContainer{
+   position: relative;
+   top: 0px;
+   transition: input 1s ease 0s;
+   display: flex;
+   height: 20px;
+}
+.inputContainer:hover .searchIcon{
+   color: red;
+}
+.inputContainer{
+   margin-left: 0px;
+}
+.inputContainer input{
+   padding: 5px 0px;
+   color: black;
+   font-size: 14px;
+   margin-bottom: 20px;
+   padding: 5px;
+   border-radius: 5px;
+   background-color: #F3F3F3;
+   border: 0.5px solid gray
+}
+
+.searchIcon{
+   font-size: 25px;
+   height: 20px;
+   margin-right: 5px;
+   color: gray;
+}
