@@ -1,38 +1,23 @@
-import { useState } from 'react';
 import { useMatchContext } from '../context/MatchContext';
 import { FaSearch } from 'react-icons/fa';
-import styles from './SearchInput.module.css'
+import styles from './SearchInput.module.css';
 
 function SearchInput() {
 	const { searchValue, onChangeSearchValue } = useMatchContext();
 
-	const [showInput,setShowInput] = useState(false)
-
-	const handleMouseEnter = () =>{
-		setShowInput(true)
-	}
-	const handleMouseLeave = () =>{
-		setShowInput(false)
-	}
-
 	return (
-		<div
-			className={styles.inputContainer}
-			onMouseEnter={handleMouseEnter}
-			onMouseLeave={handleMouseLeave}
-		>
+		<div className={styles.inputContainer}>
 			<div className={styles.inputContainer}>
-				<FaSearch title='Search' className={styles.searchIcon}/>
-				{showInput && (
-					<div>
-						<input
+				<FaSearch title="Search" className={styles.searchIcon} />
+
+				<div>
+					<input
 						type="text"
 						placeholder="Search match or league"
 						value={searchValue}
 						onChange={onChangeSearchValue}
-						/>
-					</div>
-				)}
+					/>
+				</div>
 			</div>
 		</div>
 	);
