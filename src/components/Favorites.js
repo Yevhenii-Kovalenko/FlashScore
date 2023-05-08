@@ -1,9 +1,8 @@
-import { useContext } from 'react';
-import MatchContext from '../context/MatchContext';
+import { useMatchContext } from '../context/MatchContext';
 import Match from './Match';
 
 function Favorites() {
-	const { selectedMatch, handleSelectedMatch } = useContext(MatchContext);
+	const { selectedMatch, handleSelectedMatch } = useMatchContext();
 	return (
 		<div >
 			<h1>Favorite matches!</h1>

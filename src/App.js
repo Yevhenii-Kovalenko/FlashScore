@@ -1,9 +1,6 @@
-import { useState } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-import matches from './data/matches';
-import allLeagues from './data/allLeagues';
-import MatchContext from './context/MatchContext';
+import  { MatchProvider } from './context/MatchContext';
 import Live from './pages/Live';
 import Finished from './pages/Finished';
 import AllMatches from './pages/AllMatches';
@@ -23,89 +20,9 @@ import Leagues from './components/Leagues';
 import MatchNav from './components/MatchNav';
 
 function App() {
-	const [selectedStatus, setSelectedStatus] = useState(undefined);
-	const [selectedLeagues, setSelectedLeagues] = useState([]);
-	const [selectedMatch, setSelectedMatch] = useState([]);
-	const [openModal, setOpenModal] = useState(false);
-	const [matchInfo, setMatchInfo] = useState([]);
-	const [searchValue, setSearchValue] = useState('');
-
-	const filteredLeagues = allLeagues.filter((league) =>
-		league.name.toLowerCase().includes(searchValue.toLowerCase())
-	);
-	const filteredMatches = matches.filter(
-		(match) =>
-			match.home.name.toLowerCase().includes(searchValue.toLowerCase()) ||
-			match.guest.name.toLowerCase().includes(searchValue.toLowerCase()) 
-	);
-	const onChangeSearchValue = (e) => {
-		setSearchValue(e.target.value);
-	};
-
-	const handleOpenModal = (match) => {
-		setMatchInfo((prevMatch) => [...prevMatch, match]);
-
-		setOpenModal(true);
-		
-	};
-
-	const handleCloseModal = (match) => {
-		setOpenModal(false);
-		setMatchInfo((prevMatch) =>
-			prevMatch.filter((matchInfo) => matchInfo !== match)
-		);
-	};
-
-
-	const handleStatusChange = (e) => {
-		setSelectedStatus(e.target.value);
-	};
-
-	const handleSelectedMatch = (match) => {
-		if (selectedMatch.includes(match)) {
-			setSelectedMatch((prevMatch) =>
-				prevMatch.filter((selectedMatch) => selectedMatch !== match)
-			);
-		} else {
-			setSelectedMatch((prevMatch) => [...prevMatch, match]);
-		}
-	};
-
-	const handleOnClick = (id) => {
-		if (selectedLeagues.includes(id)) {
-			setSelectedLeagues(
-				selectedLeagues.filter((selectedId) => selectedId !== id)
-			);
-		} else {
-			setSelectedLeagues([...selectedLeagues, id]);
-		}
-	};
-
 	return (
 		<BrowserRouter>
-			<MatchContext.Provider
-				value={{
-					selectedStatus,
-					setSelectedStatus,
-					matches,
-					handleStatusChange,
-					allLeagues,
-					selectedLeagues,
-					setSelectedLeagues,
-					selectedMatch,
-					setSelectedMatch,
-					handleSelectedMatch,
-					handleOnClick,
-					openModal,
-					handleOpenModal,
-					handleCloseModal,
-					matchInfo,
-					searchValue,
-					onChangeSearchValue,
-					filteredMatches,
-					filteredLeagues,
-				}}
-			>
+			<MatchProvider>
 				<div className="App">
 					<div className="AppContainer">
 						<Header />
@@ -129,7 +46,7 @@ function App() {
 						</Routes>
 					</div>
 				</div>
-			</MatchContext.Provider>
+			</MatchProvider>
 		</BrowserRouter>
 	);
 }

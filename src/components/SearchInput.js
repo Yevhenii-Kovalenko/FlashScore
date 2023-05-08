@@ -1,10 +1,10 @@
+import { useState } from 'react';
+import { useMatchContext } from '../context/MatchContext';
 import { FaSearch } from 'react-icons/fa';
-import { useContext, useState } from 'react';
-import MatchContext from '../context/MatchContext';
 import styles from './SearchInput.module.css'
 
 function SearchInput() {
-	const { searchValue, onChangeSearchValue } = useContext(MatchContext);
+	const { searchValue, onChangeSearchValue } = useMatchContext();
 
 	const [showInput,setShowInput] = useState(false)
 

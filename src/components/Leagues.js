@@ -1,7 +1,6 @@
 import { RiArrowDownSLine, RiArrowUpSLine } from 'react-icons/ri';
-import { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
-import MatchContext from '../context/MatchContext';
+import {useMatchContext} from '../context/MatchContext';
 import matches from '../data/matches';
 import Match from './Match';
 import styles from './Leagues.module.css';
@@ -13,8 +12,8 @@ function Leagues() {
 		selectedLeagues,
 		handleOnClick,
 		handleSelectedMatch,
-		filteredLeagues
-	} = useContext(MatchContext);
+		filteredLeagues,
+	} = useMatchContext();
 	return (
 		<div className={styles.leagues}>
 			{filteredLeagues.map((league) => (

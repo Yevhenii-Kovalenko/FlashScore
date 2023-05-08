@@ -1,12 +1,12 @@
+import { useMatchContext } from '../context/MatchContext';
 import { TfiClose } from 'react-icons/tfi';
 import { IoFootball } from 'react-icons/io5';
-import { useContext } from 'react';
-import MatchContext from '../context/MatchContext';
 import styles from './ModalMatchDetalis.module.css';
 import ModalNavMenu from './ModalNavMenu';
 
+
 function ModalMatchDetalis({ score }) {
-	const { handleCloseModal, matchInfo } = useContext(MatchContext);
+	const { handleCloseModal, matchInfo } = useMatchContext();
 
 	return (
 		<div className={styles.modal}>
