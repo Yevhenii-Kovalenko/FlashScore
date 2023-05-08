@@ -4,7 +4,6 @@ import { IoFootball } from 'react-icons/io5';
 import styles from './ModalMatchDetalis.module.css';
 import ModalNavMenu from './ModalNavMenu';
 
-
 function ModalMatchDetalis({ score }) {
 	const { handleCloseModal, matchInfo } = useMatchContext();
 
@@ -14,10 +13,12 @@ function ModalMatchDetalis({ score }) {
 				<div key={match.id} className={styles.modalContainer}>
 					<div className={styles.modalTitle}>
 						<h2>{match.league.name}</h2>
-						<TfiClose
+						<button
 							className={styles.modalClose}
 							onClick={() => handleCloseModal(match)}
-						/>
+						>
+							<TfiClose />
+						</button>
 					</div>
 					{/* <div className={styles.matchTime}>20.04.2023</div> */}
 					<div className={styles.matchInfo}>

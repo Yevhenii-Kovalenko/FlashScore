@@ -48,6 +48,9 @@
   font-size: 28px;
   position: absolute;
   right: 0;
+  color: white;
+  background-color: inherit;
+  margin-top: 20px;
 }
 .matchInfo{
   display: flex;
