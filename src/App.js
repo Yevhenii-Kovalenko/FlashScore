@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-import MatchList from './components/MatchList';
 import matches from './data/matches';
 import allLeagues from './data/allLeagues';
 import MatchContext from './context/MatchContext';
@@ -24,9 +23,7 @@ import Leagues from './components/Leagues';
 import MatchNav from './components/MatchNav';
 
 function App() {
-	// const [selectedLeague, setSelectedLeague] = useState(undefined);
 	const [selectedStatus, setSelectedStatus] = useState(undefined);
-	const [leagueOpen, setLeagueOpen] = useState([]);
 	const [selectedLeagues, setSelectedLeagues] = useState([]);
 	const [selectedMatch, setSelectedMatch] = useState([]);
 	const [openModal, setOpenModal] = useState(false);
@@ -59,9 +56,7 @@ function App() {
 		);
 	};
 
-	const handleLeagueChange = (e) => {
-		// setSelectedLeague(e.target.value);
-	};
+
 	const handleStatusChange = (e) => {
 		setSelectedStatus(e.target.value);
 	};
@@ -77,12 +72,6 @@ function App() {
 	};
 
 	const handleOnClick = (id) => {
-		if (leagueOpen.includes(id)) {
-			setLeagueOpen((prevState) => prevState.filter((i) => i !== id));
-		} else {
-			setLeagueOpen((prevState) => [...prevState, id]);
-		}
-
 		if (selectedLeagues.includes(id)) {
 			setSelectedLeagues(
 				selectedLeagues.filter((selectedId) => selectedId !== id)
@@ -96,16 +85,11 @@ function App() {
 		<BrowserRouter>
 			<MatchContext.Provider
 				value={{
-					// selectedLeague,
 					selectedStatus,
-					// setSelectedLeague,
 					setSelectedStatus,
 					matches,
-					handleLeagueChange,
 					handleStatusChange,
 					allLeagues,
-					leagueOpen,
-					setLeagueOpen,
 					selectedLeagues,
 					setSelectedLeagues,
 					selectedMatch,

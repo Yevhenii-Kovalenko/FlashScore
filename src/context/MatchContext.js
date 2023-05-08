@@ -1,15 +1,7 @@
 import { createContext } from "react";
 
 
-const MatchContext = createContext(/* {
-	matches: [],
-	selectedStatus: undefined,
-	selectedLeague: undefined,
-	setSelectedLeague: () => {},
-	setSelectedStatus: () => {},
-	handleLeagueChange: () => {},
-	handleStatusChange: () => {}
-} */);
+const MatchContext = createContext();
 
 
 export default MatchContext;
