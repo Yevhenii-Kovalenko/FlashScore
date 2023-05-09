@@ -1,11 +1,13 @@
 import { useContext } from 'react';
 import MatchContext from '../context/MatchContext';
 import Match from '../components/Match';
+import { useMatchContext } from '../context/MatchContext';
+
 
 function Scheduled() {
-	const { matches, handleSelectedMatch } = useContext(MatchContext);
+	const { filteredMatches, handleSelectedMatch } = useMatchContext();
 
-	const sheduledMatch = matches.filter(
+	const sheduledMatch = filteredMatches.filter(
 		(match) => {
 			if (match.status === 'live') {
 				return false;

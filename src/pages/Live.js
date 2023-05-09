@@ -1,10 +1,12 @@
 import React, { useContext } from 'react';
-import MatchContext from '../context/MatchContext';
 import Match from '../components/Match';
+import { useMatchContext } from '../context/MatchContext';
 
 function Live() {
-	const { matches, handleSelectedMatch } = useContext(MatchContext);
-	const liveMatch = matches.filter((match) => match.status === 'live');
+
+	const { filteredMatches, handleSelectedMatch } = useMatchContext();
+
+	const liveMatch = filteredMatches.filter((match) => match.status === 'live');
 	return (
 		<div>
 			<div >

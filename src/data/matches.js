@@ -21,6 +21,7 @@ const matches = [
 		league: {
 			id: 2,
 			name: 'La Liga',
+			country: 'spain',
 		},
 		score: [
 			{ id: 1, name: 'A.Fati', time: '`17', team: 1 },
@@ -83,6 +84,7 @@ const matches = [
 		league: {
 			id: 1,
 			name: 'English Premier League',
+			country: 'england',
 		},
 		score: [
 			{ id: 1, name: 'R.Mahrez', time: '`37', team: 4 },
@@ -109,6 +111,7 @@ const matches = [
 		league: {
 			id: 3,
 			name: 'Bundesliga',
+			country: 'germany',
 		},
 
 		score: [],
@@ -151,6 +154,7 @@ const matches = [
 		league: {
 			id: 2,
 			name: 'La Liga',
+			country: 'spain',
 		},
 
 		score: [],
@@ -193,6 +197,7 @@ const matches = [
 		league: {
 			id: 5,
 			name: 'Ligue 1',
+			country: 'france',
 		},
 
 		score: [],
@@ -223,6 +228,7 @@ const matches = [
 		league: {
 			id: 6,
 			name: 'Eredivise',
+			country: 'netherlands',
 		},
 
 		score: [],
@@ -244,6 +250,7 @@ const matches = [
 		league: {
 			id: 7,
 			name: 'Brasileiro Serie A',
+			country: 'brasil',
 		},
 
 		score: [],
@@ -274,6 +281,7 @@ const matches = [
 		league: {
 			id: 9,
 			name: 'Ukraine Premier League',
+			country: 'ukraine',
 		},
 
 		score: [],
@@ -295,6 +303,7 @@ const matches = [
 		league: {
 			id: 8,
 			name: 'Primera Liga',
+			country: 'portugal',
 		},
 
 		score: [],
@@ -316,6 +325,7 @@ const matches = [
 		league: {
 			id: 4,
 			name: 'Serie A',
+			country: 'italy',
 		},
 
 		score: [],

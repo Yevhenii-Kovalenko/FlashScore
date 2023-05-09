@@ -1,11 +1,13 @@
 import React, { useContext } from 'react';
-import MatchContext from '../context/MatchContext';
 import Match from '../components/Match';
+import { useMatchContext } from '../context/MatchContext';
 
 
 function Finished() {
-	const { matches, handleSelectedMatch } = useContext(MatchContext);
-	const finishedMatch = matches.filter((match) => match.status === 'finished');
+	const { filteredMatches, handleSelectedMatch } = useMatchContext();
+	const finishedMatch = filteredMatches.filter(
+		(match) => match.status === 'finished'
+	);
 	return (
 		<div>
 			<div >
