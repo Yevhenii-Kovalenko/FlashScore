@@ -21,7 +21,7 @@ function Leagues() {
 					<div className={styles.leaguesTitle}>
 						<div className={styles.leagueBody}>
 							<img src={league.url} alt="" />
-							<NavLink to={`standing/${league.id}`}>{league.name}</NavLink>
+							<NavLink to={`standing/${league.country}`}>{league.name}</NavLink>
 						</div>
 						{selectedLeagues.includes(league.id) ? (
 							<RiArrowUpSLine

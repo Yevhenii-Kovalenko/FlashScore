@@ -1,8 +1,6 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { RxStarFilled } from 'react-icons/rx';
-
-
 import styles from './Header.module.css';
 import allLeagues from '../data/allLeagues';
 
@@ -26,7 +24,9 @@ function Header() {
 							<ul>
 								{allLeagues.map((league) => (
 									<li key={league.id}>
-										<NavLink to={`standing/${league.id}`}>{league.name}</NavLink>
+										<NavLink to={`standing/${league.country}`}>
+											{league.name}
+										</NavLink>
 									</li>
 								))}
 							</ul>
@@ -39,7 +39,6 @@ function Header() {
 							<RxStarFilled className={styles.icon} title="Favorites" />
 						</NavLink>
 					</li>
-					
 				</ul>
 			</nav>
 		</header>
