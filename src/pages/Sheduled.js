@@ -1,8 +1,7 @@
 import { useContext } from 'react';
 import MatchContext from '../context/MatchContext';
-import Match from '../components/Match';
+import Match from '../components/match/Match';
 import { useMatchContext } from '../context/MatchContext';
-
 
 function Scheduled() {
 	const { filteredMatches, handleSelectedMatch } = useMatchContext();
@@ -22,7 +21,7 @@ function Scheduled() {
 	);
 
 	return (
-		<div >
+		<div>
 			{sheduledMatch.map((match) => (
 				<Match
 					key={match.id}

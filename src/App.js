@@ -4,12 +4,12 @@ import './App.css';
 import Live from './pages/Live';
 import Finished from './pages/Finished';
 import AllMatches from './pages/AllMatches';
-import Header from './components/Header';
+import Header from './components/header/Header';
 import Scheduled from './pages/Sheduled';
 import DefaultStandingsPage from './pages/DefaultStandingsPage';
-import Favorites from './components/Favorites';
-import Leagues from './components/Leagues';
-import MatchNav from './components/MatchNav';
+import Favorites from './components/favorites/Favorites';
+import Leagues from './components/leagues/Leagues';
+import MatchNav from './components/match/MatchNav';
 
 function App() {
 	return (

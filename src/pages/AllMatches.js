@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
 import MatchContext from '../context/MatchContext';
-import Match from '../components/Match';
-
+import Match from '../components/match/Match';
 
 function AllMatches() {
 	const { filteredMatches, handleSelectedMatch } = useContext(MatchContext);

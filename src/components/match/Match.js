@@ -1,8 +1,8 @@
 import { RxStar, RxStarFilled } from 'react-icons/rx';
 import { useState } from 'react';
-import { useMatchContext } from '../context/MatchContext';
-import styles from './Match.module.css';
-import ModalMatchDetalis from './ModalMatchDetalis';
+import { useMatchContext } from '../../context/MatchContext';
+import styles from '../match/Match.module.css';
+import ModalMatchDetalis from '../modalMatchDetalis/ModalMatchDetalis';
 
 function Match({
 	home,
@@ -13,12 +13,12 @@ function Match({
 	match,
 	isFavorites,
 	score,
-	id
+	id,
 }) {
-	const {  handleOpenModal, matchInfo } = useMatchContext();
+	const { handleOpenModal, matchInfo } = useMatchContext();
 
 	const [toggleFavorite, setToggleFavorite] = useState(isFavorites);
-	
+
 	const onClickFavorite = (match) => {
 		setToggleFavorite(!toggleFavorite);
 		handleSelectedMatch(match);

@@ -1,6 +1,6 @@
-import { useMatchContext } from '../context/MatchContext';
+import { useMatchContext } from '../../context/MatchContext';
 import { FaSearch } from 'react-icons/fa';
-import styles from './SearchInput.module.css';
+import styles from '../searchInput/SearchInput.module.css'
 
 function SearchInput() {
 	const { searchValue, onChangeSearchValue } = useMatchContext();

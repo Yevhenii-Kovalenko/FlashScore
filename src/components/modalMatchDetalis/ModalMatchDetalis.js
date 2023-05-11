@@ -1,7 +1,7 @@
-import { useMatchContext } from '../context/MatchContext';
+import { useMatchContext } from '../../context/MatchContext';
 import { TfiClose } from 'react-icons/tfi';
 import { IoFootball } from 'react-icons/io5';
-import styles from './ModalMatchDetalis.module.css';
+import styles from '../modalMatchDetalis/ModalMatchDetalis.module.css';
 import ModalNavMenu from './ModalNavMenu';
 
 function ModalMatchDetalis({ score }) {

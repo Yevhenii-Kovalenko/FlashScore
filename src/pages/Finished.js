@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
-import Match from '../components/Match';
+import Match from '../components/match/Match';
 import { useMatchContext } from '../context/MatchContext';
-
 
 function Finished() {
 	const { filteredMatches, handleSelectedMatch } = useMatchContext();
@@ -10,7 +9,7 @@ function Finished() {
 	);
 	return (
 		<div>
-			<div >
+			<div>
 				{finishedMatch.map((match) => (
 					<Match
 						key={match.id}

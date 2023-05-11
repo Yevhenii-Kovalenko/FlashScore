@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { RxStarFilled } from 'react-icons/rx';
-import styles from './Header.module.css';
-import allLeagues from '../data/allLeagues';
+import styles from '../header/Header.module.css';
+import allLeagues from '../../data/allLeagues';
 
 function Header() {
 	const [isSubMenuVisible, setIsSubMenuVisible] = useState(false);

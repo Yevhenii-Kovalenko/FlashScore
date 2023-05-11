@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
-import styles from './MatchNav.module.css';
-import SearchInput from '../components/SearchInput';
+import styles from '../match/MatchNav.module.css';
+import SearchInput from '../searchInput/SearchInput';
 
 function MatchNav() {
 	return (
@@ -72,10 +72,9 @@ function MatchNav() {
 					</NavLink>
 				</li>
 				<li>
-					<SearchInput/>
+					<SearchInput />
 				</li>
 			</ul>
-			
 		</nav>
 	);
 }

@@ -1,10 +1,10 @@
-import { useMatchContext } from '../context/MatchContext';
-import Match from './Match';
+import { useMatchContext } from '../../context/MatchContext';
+import Match from '../match/Match';
 
 function Favorites() {
 	const { selectedMatch, handleSelectedMatch } = useMatchContext();
 	return (
-		<div >
+		<div>
 			<h1>Favorite matches!</h1>
 			{selectedMatch.length === 0 ? (
 				<p>Favorites list is empty!</p>

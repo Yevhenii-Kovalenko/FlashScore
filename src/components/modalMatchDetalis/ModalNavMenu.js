@@ -1,11 +1,9 @@
-import styles from './ModalNavMenu.module.css';
+import styles from '../modalMatchDetalis/ModalNavMenu.module.css';
 import { NavLink } from 'react-router-dom';
-import { useMatchContext } from '../context/MatchContext';
-
+import { useMatchContext } from '../../context/MatchContext';
 
 function ModalNavMenu() {
-
-const { matchInfo } = useMatchContext();
+	const { matchInfo } = useMatchContext();
 
 	return (
 		<div className={styles.modalNav}>
@@ -15,7 +13,9 @@ const { matchInfo } = useMatchContext();
 				</li>
 				<li>
 					{matchInfo.map((match) => (
-						<NavLink key={match.id} to={`standing/${match.league.country}`}>Standings</NavLink>
+						<NavLink key={match.id} to={`/${match.league.country}`}>
+							Standings
+						</NavLink>
 					))}
 				</li>
 				<li>
