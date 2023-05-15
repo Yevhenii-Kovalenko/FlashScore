@@ -13,11 +13,12 @@ button {
 }
 .AppContainer{
 	background: #f3f3f3;
-   width: 800px;
+   max-width: 800px;
    border-radius: 20px;
    margin: 100px auto;
    text-align: center;
    color:black;
    padding-bottom: 15px;
    height: 100%;
+
 }

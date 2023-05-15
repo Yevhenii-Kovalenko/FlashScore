@@ -2,7 +2,6 @@ import { useMatchContext } from '../../context/MatchContext';
 import { TfiClose } from 'react-icons/tfi';
 import { IoFootball } from 'react-icons/io5';
 import styles from '../modalMatchDetalis/ModalMatchDetalis.module.css';
-import ModalNavMenu from './ModalNavMenu';
 
 function ModalMatchDetalis({ score }) {
 	const { handleCloseModal, matchInfo } = useMatchContext();
@@ -22,7 +21,6 @@ function ModalMatchDetalis({ score }) {
 					</div>
 					{/* <div className={styles.matchTime}>20.04.2023</div> */}
 					<div className={styles.matchInfo}>
-						<ModalNavMenu />
 						<div className={styles.teamInfo}>
 							<div className={styles.teamInfoBody}>
 								<div>

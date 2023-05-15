@@ -4,7 +4,12 @@
 	left: 0;
 	z-index: 9000;
 	width: 100%;
-	background-color: rgb(131, 166, 197,0.5);
+	height: 50px;
+	background: radial-gradient(
+		circle,
+		rgba(51, 127, 231, 0.927608543417367) 42%,
+		rgba(255, 255, 255, 1) 85%
+	);
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 	padding: 20px;
 	border-bottom-right-radius: 15px;
@@ -15,7 +20,6 @@
 .nav {
 	display: flex;
 	justify-content: flex-end;
-
 }
 .nav ul {
 	display: flex;
@@ -23,6 +27,7 @@
 	padding: 0;
 	align-items: center;
 	text-align: center;
+	margin-right: 40px;
 }
 .nav li {
 	position: relative;
@@ -32,7 +37,7 @@
 }
 .nav li:hover {
 	cursor: pointer;
-	color:rgb(4, 102, 187)
+	color: rgb(4, 102, 187);
 }
 .list ul {
 	display: none;
@@ -49,7 +54,7 @@
 	display: block;
 }
 .list li ul li {
-	margin: 0 ;
+	margin: 0;
 	padding: 10px;
 	font-size: 18px;
 	letter-spacing: 0.5px;

@@ -11,7 +11,7 @@ function MatchNav() {
 						to="/"
 						style={({ isActive, isPending }) => {
 							return {
-								backgroundColor: isActive ? '#FF0046' : '',
+								background: isActive ? '#3C82E3' : '',
 								color: isPending ? '#FFF2CE' : 'black',
 							};
 						}}
@@ -24,7 +24,7 @@ function MatchNav() {
 						to="/all"
 						style={({ isActive, isPending }) => {
 							return {
-								backgroundColor: isActive ? '#FF0046' : '',
+								background: isActive ? '#3C82E3' : '',
 								color: isPending ? '#FFF2CE' : 'black',
 							};
 						}}
@@ -37,7 +37,7 @@ function MatchNav() {
 						to="/live"
 						style={({ isActive, isPending }) => {
 							return {
-								backgroundColor: isActive ? '#FF0046' : '',
+								background: isActive ? '#3C82E3' : '',
 								color: isPending ? '#FFF2CE' : 'black',
 							};
 						}}
@@ -50,7 +50,7 @@ function MatchNav() {
 						to="/finished"
 						style={({ isActive, isPending }) => {
 							return {
-								backgroundColor: isActive ? '#FF0046' : '',
+								background: isActive ? '#3C82E3' : '',
 								color: isPending ? '#FFF2CE' : 'black',
 							};
 						}}
@@ -63,7 +63,7 @@ function MatchNav() {
 						to="/scheduled"
 						style={({ isActive, isPending }) => {
 							return {
-								backgroundColor: isActive ? '#FF0046' : '',
+								background: isActive ? '#3C82E3' : '',
 								color: isPending ? '#FFF2CE' : 'black',
 							};
 						}}

@@ -16,9 +16,19 @@ function Header() {
 			<nav className={styles.nav}>
 				<ul className={styles.list}>
 					<li>
-						<NavLink to="/">Home</NavLink>
+						<NavLink
+							to="/"
+							style={({ isActive, isPending }) => {
+								return {
+									background: isActive ? '#3C82E3' : '',
+									color: isPending ? '#FFF2CE' : 'black',
+								};
+							}}
+						>
+							Home
+						</NavLink>
 					</li>
-					<li onMouseEnter={toggleSubMenu} onMouseLeave={toggleSubMenu}>
+					<li onMouseEnter={toggleSubMenu} onMouseLeave={toggleSubMenu} >
 						Standings
 						{isSubMenuVisible && (
 							<ul>

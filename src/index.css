@@ -11,9 +11,12 @@ body {
 		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
 		sans-serif;
 	color: white;
-	background-color: #c5c2c2;
+background: rgb(51,127,231);
+background: radial-gradient(circle, rgba(51,127,231,0.927608543417367) 42%, rgba(255,255,255,1) 90%);
 	letter-spacing: 0.5px;
-	overflow: visible;
+	overflow: auto;
+	overflow-x: hidden;
+	height: 100vh;
 }
 
 a{
